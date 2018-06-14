@@ -1,0 +1,5 @@
+.container{
+    @include flexbox();
+    flex-direction: column;
+    height: 100%;
+}

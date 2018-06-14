@@ -1,0 +1,203 @@
+.container {
+    main {
+        @include flex();
+        width: 100%;
+        overflow-y: scroll;
+        background: #fff;
+        .banner {
+            width: 100%;
+            height: 157px;
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .nav2 {
+            width: 100%;
+            height: 86px;
+            margin: 15px 0 10px;
+            overflow: hidden;
+            ul {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                li {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    i {
+                        width: 51px;
+                        height: 51px;
+                        margin: 0 auto 10px;
+                        display: block;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 51px;
+                    }
+                    &:nth-child(1) i {
+                        background: plum;
+                    }
+                    &:nth-child(2) i {
+                        background: plum;
+                    }
+                    &:nth-child(3) i {
+                        background: plum;
+                    }
+                    &:nth-child(4) i {
+                        background: plum;
+                    }
+                    .icon {
+                        font-family: "iconfont";
+                        font-size: 28px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .nav3 {
+            width: 100%;
+            height: 94px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .shop-wrap {
+            width: 100%;
+            height: 193px;
+            .title-wrap {
+                width: 100%;
+                height: 16px;
+                display: flex;
+                margin-top: 20px;
+                i {
+                    font-size: 14px;
+                    margin-right: 10px;
+                }
+                span {
+                    font-size: 14px;
+                    margin-right: 10px;
+                }
+            }
+            .shop-list {
+                height: 180px;
+                overflow: hidden;
+                width: 100%;
+                ul {
+                    font-size: 0;
+                    white-space: nowrap;
+                    overflow-x: auto;
+                    height: 160px;
+                    overflow-y: hidden;
+                    display: flex;
+                    li {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 106px;
+                            height: 106px;
+                        }
+                        span {
+                            display: block;
+                            // width: 100%;
+                            width: 106px;
+                            height: .2rem;
+                            @include ellipsis();
+                            color: black;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .nav4 {
+            width: 100%;
+            .nav-title {
+                width: 100%;
+                height: 34px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background: #faf5f6;
+                span {
+                    font-size: 14px;
+                }
+                i {
+                    background: #ffe5ec;
+                    color: #fe4a65;
+                    height: 16px;
+                    padding: 0 5px;
+                    margin-left: 9px;
+                    border-radius: 4px;
+                    line-height: 16px;
+                    font-size: 12px;
+                }
+            }
+            .good-list {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                ul {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    background: #faf5f6;
+                    li {
+                        width: 45%;
+                        height: 227px;
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 10px;
+                        background: #fff;
+                        margin-top: 7px;
+                        img {
+                            width: 100%;
+                            height: 177px;
+                        }
+                        .i1 {
+                            font-size: 13px;
+                            line-height: 18px;
+                            text-align: left;
+                            height: 18px;
+                            margin: 0 5px;
+                            @include ellipsis();
+                            width: 100%;
+                            display: block;
+                        }
+                        b {
+                            display: flex;
+                            justify-content: space-between;
+                            font-weight: 100;
+                            margin-top: 5px;
+                            i {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+                .foot {
+                    text-align: center;
+                    height: .4rem;
+                    line-height: .4rem;
+                }
+                .foot img {
+                    margin-top: -0.05rem;
+                    width: .16rem;
+                    height: .16rem;
+                    display: inline-block;
+                    transition: transform 150ms;
+                    -webkit-transition: transform 150ms;
+                }
+                .down {
+                    @include transform(rotate(180deg));
+                }
+            }
+        }
+    }
+}
